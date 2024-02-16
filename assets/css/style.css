@@ -16,8 +16,9 @@ body {
 /* HEADER */
 header {
   background-color: #ffc018;
-  border-bottom: 1px solid black;
-  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 999;
 }
 header a {
   text-decoration: none;
@@ -25,11 +26,7 @@ header a {
   font-size: small;
   padding-inline: 15px;
 }
-header div:first-child {
-  position: sticky;
-  top: 0;
-  z-index: 999;
-}
+
 .div-navbar {
   padding-block: 1.3rem;
   padding-inline: 4rem;
@@ -74,6 +71,7 @@ header div:first-child {
 .div-topsection {
   background-color: #ffc018;
   position: relative;
+  border-bottom: 1px solid black;
 }
 .width-div {
   max-width: 1192px;
@@ -230,5 +228,10 @@ main {
 }
 .div-articles article {
   margin-bottom: 75px;
+}
+.sticky-desktop {
+  position: sticky;
+  top: 80px;
+  z-index: 998;
 }
 /* SPECIAL STYLE  */
