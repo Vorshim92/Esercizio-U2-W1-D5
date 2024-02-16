@@ -196,11 +196,11 @@ main {
 }
 
 .div-articles {
-  width: 65%;
+  width: 60%;
   padding-right: 50px;
 }
 .bottom-posts aside {
-  width: 35%;
+  width: 40%;
 }
 /* FOOTER */
 .bottom-line {
@@ -220,6 +220,11 @@ main {
   object-fit: cover;
   padding-left: 25px;
 }
+
+.h2-maintitle {
+  font-weight: 800;
+}
+
 .time {
   display: flex;
   flex-direction: row;
@@ -231,7 +236,29 @@ main {
 }
 .sticky-desktop {
   position: sticky;
-  top: 80px;
+  top: 100px;
   z-index: 998;
+}
+.bottom-buttons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+.bottom-buttons button {
+  cursor: pointer;
+  border-radius: 99rem;
+  padding: 12px 24px;
+  border: 0;
+  color: #3a4149;
+  background: #f2f2f2;
+  line-height: 1.15;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.bottom-buttons button:hover {
+  transition: all 0.1s ease;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #ffc018;
 }
 /* SPECIAL STYLE  */
