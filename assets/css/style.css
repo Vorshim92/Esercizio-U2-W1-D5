@@ -18,8 +18,6 @@ header {
   background-color: #ffc018;
   border-bottom: 1px solid black;
   width: 100%;
-  position: sticky;
-  z-index: 999;
 }
 header a {
   text-decoration: none;
@@ -27,7 +25,11 @@ header a {
   font-size: small;
   padding-inline: 15px;
 }
-
+header div:first-child {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 .div-navbar {
   padding-block: 1.3rem;
   padding-inline: 4rem;
@@ -112,7 +114,7 @@ header a {
   border: 1px solid rgba(25, 25, 25, 1);
   padding: 0.5rem 3rem;
   color: rgba(255, 255, 255, 1);
-  font-size: 14px;
+  font-size: 1rem;
 }
 /* MAIN */
 
@@ -124,6 +126,9 @@ main {
 /* MAIN TRENDING */
 .discover-mobile {
   display: none;
+}
+.discover-desktop {
+  padding-left: 50px;
 }
 
 .div-trending {
@@ -162,6 +167,12 @@ main {
   width: 33%;
   margin-bottom: 3rem;
 }
+
+.innerCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
 .tag-name {
   display: flex;
 }
@@ -187,11 +198,37 @@ main {
 }
 
 .div-articles {
-  width: 60%;
+  width: 65%;
+  padding-right: 50px;
 }
 .bottom-posts aside {
-  width: 40%;
+  width: 35%;
 }
 /* FOOTER */
+.bottom-line {
+  margin-block: 30px;
+}
+.bottom-links {
+  border-top: 1px solid #f2f2f2;
+  padding-top: 30px;
+}
 
+.bottom-card {
+  display: flex;
+}
+.bottom-card img:last-child {
+  width: 200px;
+  height: 134px;
+  object-fit: cover;
+  padding-left: 25px;
+}
+.time {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+.div-articles article {
+  margin-bottom: 75px;
+}
 /* SPECIAL STYLE  */
