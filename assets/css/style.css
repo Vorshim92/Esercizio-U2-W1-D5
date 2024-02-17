@@ -254,17 +254,18 @@ main {
 .bottom-buttons button {
   cursor: pointer;
   border-radius: 99rem;
-  padding: 12px 24px;
+  padding: 12px 18px;
   border: 0;
   color: #3a4149;
   background: #f2f2f2;
   line-height: 1.15;
   font-size: 16px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
+  margin: 4px;
 }
 
 .bottom-buttons button:hover {
   transition: all 0.1s ease;
-  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #ffc018;
+  border: 1px solid #ffc018;
 }
 /* SPECIAL STYLE  */
