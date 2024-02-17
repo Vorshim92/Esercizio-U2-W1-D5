@@ -19,12 +19,17 @@ header {
   position: sticky;
   top: 0;
   z-index: 999;
+  transition: background-color 0.5s ease;
 }
 header a {
   text-decoration: none;
   color: black;
   font-size: small;
   padding-inline: 15px;
+}
+
+header.sticky {
+  background-color: white;
 }
 
 .div-navbar {
