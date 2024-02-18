@@ -48,7 +48,7 @@ header.sticky {
 .width-nav {
   display: flex;
   max-width: 1192px;
-  min-width: 0;
+  /* min-width: 0; */
   margin: 0 64px;
   width: 100%;
   flex-wrap: nowrap;
@@ -63,20 +63,25 @@ header.sticky {
   flex-direction: row;
   align-items: center;
 }
-.black-btn {
+.nav-btn {
   border-radius: 99em;
   background: rgba(25, 25, 25, 1);
   border: 1px solid rgba(25, 25, 25, 1);
   padding: 8px 16px;
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
+  cursor: pointer;
 }
 
+.nav-btn.sticky {
+  background: green;
+}
 /* TOP */
 .div-topsection {
   background-color: #ffc018;
   position: relative;
   border-bottom: 1px solid black;
+  /* overflow: hidden; */
 }
 .width-div {
   max-width: 1192px;
@@ -106,11 +111,17 @@ header.sticky {
   margin-bottom: 35px;
 }
 .SVG {
+  width: 585px;
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
 }
+/* @media screen and (max-width: 999px) {
+  .SVG {
+    right: -45px;
+  }
+} */
 .top-btn {
   border-radius: 99em;
   background: rgba(25, 25, 25, 1);
@@ -118,6 +129,7 @@ header.sticky {
   padding: 0.5rem 3rem;
   color: rgba(255, 255, 255, 1);
   font-size: 1rem;
+  cursor: pointer;
 }
 /* MAIN */
 
@@ -244,6 +256,11 @@ main {
   top: 100px;
   z-index: 998;
 }
+.sticky-mobile {
+  position: sticky;
+  top: 100px;
+  z-index: 998;
+}
 .bottom-buttons {
   display: flex;
   flex-direction: row;
@@ -269,3 +286,38 @@ main {
   border: 1px solid #ffc018;
 }
 /* SPECIAL STYLE  */
+/* @media screen and (max-width: 700px) {
+  .discover-desktop {
+    display: none;
+  }
+  .discover-mobile {
+    display: flex;
+  }
+} */
+@media screen and (max-width: 700px) {
+  .bottom-posts > div:first-child {
+    flex-direction: column-reverse;
+  }
+  .bottom-posts aside {
+    width: 100%;
+  }
+  .hide {
+    display: none;
+  }
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .trend-card {
+    width: 100%;
+  }
+  .div-articles {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 619px) {
+  .SVG {
+    display: none;
+  }
+}
